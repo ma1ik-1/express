@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "72c6b087-fcd1-4a07-9d8c-4a826010ec33",
+		"name": "crud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4494/getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4494",
+					"path": [
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"abdul\",\r\n    \"colour\": \"black\",\r\n    \"evil\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4494/cats/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4494",
+					"path": [
+						"cats",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/remove/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4494/remove/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4494",
+					"path": [
+						"remove",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update/1",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4494/update/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4494",
+					"path": [
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
